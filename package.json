@@ -1,0 +1,58 @@
+{
+	"name": "decorate-jira-issues",
+	"displayName": "Decorate Jira issues",
+	"description": "Highlight Jira issues in your source code\nand more ...",
+	"version": "1.0.0",
+	"publisher": "Mr2nests",
+	"license": "Apache-2.0",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"repository": {
+		"url": "https://github.com/Mr2nests/decorate-jira-issues"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"colors": [
+			{
+				"id": "decorateJiraIssues.background",
+				"description": "Background decoration color for jira issues",
+				"defaults": {
+					"dark": "#114640",
+					"light": "#114640",
+					"highContrast": "#114640"
+				}
+			}
+		],
+		"configuration": {
+			"title": "Decorate Jira issues",
+			"properties": {
+				"decorateJiraIssues.instanceUrl": {
+					"type": "string",
+					"default": null,
+					"description": "Your Jira instance URL"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
+		"eslint": "^8.13.0",
+		"typescript": "^4.7.2"
+	}
+}
