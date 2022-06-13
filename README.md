@@ -2,7 +2,7 @@
 
 This extension decorates your jira-### and allow you to open the issue in your browser.
 
-![sample](https://github.com/Mr2nests/decorate-jira-issues/blob/main/preview.png)
+![preview](https://github.com/Mr2nests/decorate-jira-issues/blob/main/preview.png?raw=true)
 
 ## How does it work?
 
